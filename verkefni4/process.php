@@ -18,8 +18,12 @@
 	// birtum gildin (strengi)
 	// tengjum saman streng við breytu við html element með punkt
 	echo  "<p>" . "Þetta er mynd af " . $mynd. "</p>"; 
-	echo '<img src="'.$myndslod.'" width="300px" height="300px">';
+	if($birtamynd == 'ja')
+	{
+		echo '<img src="'.$myndslod.'" width="300px" height="300px">';
+	}
 	echo "<br>" . $textalysing;
+	
 
 ?>
 	<br>
